@@ -5,7 +5,7 @@ struct IPv4 {
   unsigned int version;
   unsigned int ihl;
   unsigned long long ttl;
-  unsigned long long protocal;
+  unsigned long long protocol;
   unsigned char data[1024];
 };
 

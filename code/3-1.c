@@ -11,3 +11,11 @@ void *add(char *name, int score) {
 
   return s;
 }
+
+void delete(char *name) {
+  struct Student *s = while (s = NULL) {}
+}
+
+void print() {}
+
+void quit() {}

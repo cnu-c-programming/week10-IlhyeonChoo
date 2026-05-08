@@ -3,7 +3,7 @@
 
 struct IPv4 {
   unsigned int version;
-  unsigned int ih1;
+  unsigned int ihl;
   unsigned long long ttl;
   unsigned long long protocal;
   unsigned char data[1024];

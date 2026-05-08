@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+struct IPv4 {
+  unsigned int version;
+  unsigned int ih1;
+  unsigned long long ttl;
+  unsigned long long protocal;
+  unsigned char data[1024];
+};
+
+int main(int argc, char *argv[]) {
+  struct IPv4 s;
+  s.version = 0;
+  s.ih1 = 0;
+  s.ttl = 256;
+  s.protocal = 0;
+  sprintf(s.data, "hello world");
+
+  printf("version: %u, size: %zu\n", s.version, sizeof(s.version));
+  printf("ihl: %u, size: %zu\n", s.ih1, sizeof(s.ih1));
+  printf("ttl: %llu, size: %zu\n", s.ttl, sizeof(s.ttl));
+  printf("protocal: %llu, size: %zu\n", s.protocal, sizeof(s.protocal));
+  printf("data: %s, size: %zu\n", s.data, sizeof(s.data));
+}

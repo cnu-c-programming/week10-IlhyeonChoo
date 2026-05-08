@@ -6,6 +6,8 @@ struct Student {
   int score;
 };
 
-void add(char *name, int score) {
-  struct Student s = malloc(sizeof(struct Student));
+void *add(char *name, int score) {
+  struct Student *s = malloc(sizeof(struct Student));
+
+  return s;
 }
